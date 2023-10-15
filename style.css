@@ -14,7 +14,8 @@
 - White: hsl(0, 0%, 100%) */
 
 :root {
-  --dark-blue:hsl(218, 28%, 13%);
+  --darkest-blue: hsl(219, 30%, 18%);
+  --dark-blue: hsl(218, 28%, 13%);
   --white: hsl(0, 0%, 100%);
   --blue: hsl(198, 60%, 50%);
   --cyan: hsl(176, 68%, 64%);
@@ -143,4 +144,39 @@ nav {
     gap: 4px;
     color: var(--cyan);
     text-decoration: underline;
+}
+
+/* #quotes */
+
+#quotes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+}
+
+#quotes .quote-card {
+    background-color: var(--darkest-blue);
+    padding: 24px;
+}
+
+#quotes .quote-card p {
+    margin-bottom: 12px;
+}
+
+#quotes .quote-card .profile-wrapper {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+#quotes .quote-card .profile-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+#quotes .quote-card h6 {
+    font-size: 12px;
+    opacity: 0.75;
+    margin-top: 4px;
 }
