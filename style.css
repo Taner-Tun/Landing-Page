@@ -267,8 +267,8 @@ footer .footer-bottom {
     gap: 12px;
 }
 
-@media (max-width: 475px){
+/* @media (max-width: 475px){
     footer .footer-bottom {
         flex-direction: column;
     }
-}
+} */
