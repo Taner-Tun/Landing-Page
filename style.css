@@ -15,17 +15,32 @@
 
 :root {
   --dark-blue:hsl(218, 28%, 13%);
+  --white: hsl(0, 0%, 100%);
 }
 body{
+    color: var(--white);
     background-color: var(--dark-blue);
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
 }
-h1,h2,h3,h4,h5,h6, button {
+h1,h2,h3,h4,h5,h6, button, nav {
     font-family: 'Raleway', sans-serif;
 }
 .container{
+    width: 94%;
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* #Header */
+header {
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+nav {
+    display: flex;
+    gap: 36px;
 }
