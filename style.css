@@ -14,6 +14,7 @@
 - White: hsl(0, 0%, 100%) */
 
 :root {
+  --footer-blue: hsl(216, 53%, 9%);
   --darkest-blue: hsl(219, 30%, 18%);
   --dark-blue: hsl(218, 28%, 13%);
   --white: hsl(0, 0%, 100%);
@@ -185,6 +186,9 @@ nav {
 /* #Call to Action */
 
 #call-to-action {
+   position: absolute;
+   left: 0;
+   right: 0;
    margin-top: 72px;
    margin-left: auto;
    margin-right: auto;
@@ -225,4 +229,44 @@ nav {
 
 #call-to-action .input-wrapper input::placeholder{
    opacity: 0.75;
+}
+
+/* #Footer */
+
+footer {
+    background-color: var(--footer-blue);
+    padding-top: 172px;
+    padding-bottom: 72px;
+    margin-top:200px;
+}
+
+footer .footer-bottom {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer-address {
+    display: flex;
+    align-items: flex-start;
+    gap:4px;
+}
+
+.footer-com .ite {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@media (max-width: 475px){
+    footer .footer-bottom {
+        flex-direction: column;
+    }
 }
